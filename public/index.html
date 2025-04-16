@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulk Sender</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h3>Send to a WhatsApp Group</h3>
+        <label for="group-select">Select a WhatsApp Group:</label>
+        <select id="group-select">
+            <option value="">Select a Group</option>
+        </select>
+        <button onclick="fetchWhatsAppGroups()">🔄 Refresh Groups</button>
+        <button onclick="sendGroupMessage()">📩 Send to Group</button>
+        
+        <h3>Send to Individual Numbers</h3>
+        <label for="numbers">Enter Numbers (Press Enter after 10 digits):</label>
+        <p id="number-counter">You have added 0 numbers</p>
+        <div class="number-container">
+            <input type="text" id="number-input" placeholder="Type a number and press Enter">
+            <div id="number-box" class="input-box"></div>
+        </div>
+        <button id="delete-all-btn" onclick="deleteAllNumbers()">🗑️ Delete All</button>
+        <button onclick="sendBulkMessage()">📩 Send to Numbers</button>
+        
+        <label for="message">Enter Message:</label>
+        <textarea id="message" placeholder="Type your message here..."></textarea>
+        
+        <label for="file">Upload Media (Image, Video, Document):</label>
+        <input type="file" id="file">
+        
+        <div id="response"></div>
+        <button onclick="downloadReport()">📥 Download Report</button>
+        
+    
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 80px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#response {
+    margin-top: 20px;
+    font-weight: bold;
+}
+.number-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#number-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.input-box {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 160px; /* ✅ Limit height for scrollbar */
+    overflow-y: auto; /* ✅ Enable vertical scrollbar */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 5px;
+    cursor: text;
+    width: 100%;
+}
+
+/* ✅ Make number boxes smaller */
+.number-tag {
+    background: #28a745;
+    color: white;
+    padding: 2px 6px;
+    font-size: 11px;
+    border-radius: 5px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.number-tag span {
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    background: red;
+    padding: 2px 2px;
+    font-size: 8px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14px;
+    height: 14px;
+}
+#delete-all-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    width: fit-content;
+}
+
+#delete-all-btn:hover {
+    background: darkred;
+}
